@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="contact.css">
+  </head>
+
+  <style>
+
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+  <body>
+    <header>
+      <div id="navbar">
+        <div class="web-name">AdaptX</div>
+
+        <div id="navbar-menu">
+          <div> <a href="home.html">HOME</a></div>
+          <div><a href="about.html">ABOUT US</a></div>
+          <div> <a href="features.html">ACCESIBILITY FEATURES</a></div>
+          <div><a href="guidelines.html">GUIDELINES</a></div>
+          <div><a href="contact.html"></a>CONTACT US</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+        
+
+
+        <div class="contact-form-container">
+            
+            <form>
+                <div class="web-name" style="color:darkblue"> CONTACT US</div>
+                <label> Name </label>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <label> Mail </label>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <label> Message </label>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+
+        </div>
+
+    </main>
+
+<div id="footer"></div>
+<script>
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+    
+    </body>
+    </html>
